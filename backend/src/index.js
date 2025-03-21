@@ -8,7 +8,9 @@ import cors from 'cors';
 import { server,app} from './lib/socket.js';
 
 import path from 'path';
-const __dirname=path.resolve;
+import { fileURLToPath } from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 
 dotenv.config();
 
